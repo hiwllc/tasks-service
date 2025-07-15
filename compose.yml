@@ -5,3 +5,5 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: tasks
       MONGO_INITDB_ROOT_PASSWORD: tasks
+    volumes:
+      - .database:/data/db
