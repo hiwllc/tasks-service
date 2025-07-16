@@ -2,8 +2,11 @@ services:
   mongo:
     image: mongo
     restart: always
+    container_name: tasks-mongo
     environment:
       MONGO_INITDB_ROOT_USERNAME: tasks
       MONGO_INITDB_ROOT_PASSWORD: tasks
+    ports:
+      - 27017:27017
     volumes:
       - .database:/data/db

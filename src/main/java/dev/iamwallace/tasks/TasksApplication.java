@@ -5,11 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableFeignClients(basePackages = "dev.iamwallace.tasks")
+@EnableFeignClients
 public class TasksApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TasksApplication.class, args);
+    SpringApplication.run(TasksApplication.class, args);
 	}
 
 }
